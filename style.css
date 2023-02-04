@@ -1,0 +1,197 @@
+:root {
+    --Softblue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+
+    --mainBG: hsl(217, 54%, 11%);
+    --cardBG: hsl(216, 50%, 16%);
+    --line: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Outfit', sans-serif;
+}
+
+body {
+    background-color: #0d1a2d;
+}
+
+main {
+    width: 100%;
+    max-width: 350px;
+    height: 100%;
+    min-height: 30vh;
+    background-color: var(--cardBG);
+    margin: auto;
+    margin-top: 8rem;
+    border-radius: 15px;
+    padding: 1.5rem;
+}
+
+.active-img {
+    width: 100%;
+    max-width: 350px;
+    height: 350px;
+    position: relative;
+    border-radius: 12px;
+}
+
+.header-img {
+    display: flex;
+}
+
+.hover-img {
+    width: 100%;
+    max-width: 350px;
+    height: 350px;
+    text-align: center;
+    position: absolute;
+    background: #000;
+    display: none;
+    border-radius: 12px;
+}
+
+.view {
+    margin-top: 9.2rem;
+}
+
+.equilibrium {
+    width: 100%;
+    max-width: 350px;
+    height: 100%;
+    min-height: 30vh;
+    pointer-events: none;
+    border-radius: 12px;
+}
+
+.active-img:hover + .hover-img {
+    display: block;
+    background: var(--Cyan);
+    opacity: .5;
+}
+
+.main-content {
+    margin-top: 1.5rem;
+}
+
+.main-content .title {
+    color: var(--White);
+}
+
+.main-content .title:hover {
+    color: var(--Cyan);
+}
+
+.main-content p {
+    margin-top: 1.5rem;
+    font-size: 20px;
+    color: var(--Softblue);
+}
+
+
+.main-content-img {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+}
+
+.main-content-img span {
+    display: flex;
+}
+
+.main-content-img span img {
+    margin-right: .4rem;
+}
+
+.main-content-img span .value, .date {
+    font-size: 15px;
+}
+
+.main-content-img span .value {
+    color: var(--Cyan);
+}
+
+.main-content-img span .date {
+    color: var(--Softblue);
+}
+
+.footer {
+    border-top: 1px solid var(--line);
+    margin-top: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding-top: 1rem;
+}
+
+.footer img {
+    width: 100%;
+    max-width: 30px;
+    height: 100%;
+    min-height: 30px;
+    border: 1px solid var(--White);
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.footer span {
+    color: var(--Softblue);
+    font-size: 16px;
+}
+
+.footer span .color-different {
+    color: var(--White);
+}
+
+.footer span .color-different:hover {
+    color: var(--Cyan);
+    cursor: pointer;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: 2rem;
+  }
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 375px) {
+    main {
+        width: 100%;
+        max-width: 300px;
+        height: 100%;
+        min-height: 25vh;
+        background-color: var(--cardBG);
+        margin: auto;
+        margin-top: 4rem;
+        border-radius: 15px;
+        padding: 1.2rem;
+    }
+
+    .active-img {
+        height: 300px;
+        background: #000;
+    }
+
+    .view {
+        margin-top: 7.5rem;
+    }
+
+    .equilibrium {
+        width: 100%;
+        max-width: 300px;
+        height: 300px;
+    }
+
+    .hover-img {
+        width: 100%;
+        max-width: 300px;
+        height: 300px;
+    }
+}
